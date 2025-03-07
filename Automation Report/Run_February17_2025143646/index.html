@@ -1,0 +1,1098 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ExtentReports</title>
+    <link rel="apple-touch-icon" href="https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png">
+    <link rel="shortcut icon" href="https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png">
+    <link href="https://cdn.rawgit.com/extent-framework/extent-github-cdn/24cb10e/spark/css/style.css" rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<style type="text/css">
+.badge-primary { background-color: #f8f9fa;color: #007bff;}
+</style></head><script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<body class="test-view -report standard">
+    <div class="app header-dark side-nav-folded">
+        <div class="layout">
+<div class="header navbar">
+    <div class="header-container">
+        <div class="nav-logo">
+          <a href="index.html">
+            <div class="logo logo-dark" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+            <div class="logo logo-white" style="background-image: url('https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png')"></div>
+          </a>
+        </div>
+        <ul class="nav-left">
+          <li>
+            <a class="sidenav-fold-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+            <a class="sidenav-expand-toggler" href="javascript:void(0);">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+          <li class="search-box">
+            <a class="search-toggle" href="javascript:void(0);">
+              <i class="search-icon fa fa-search"></i>
+              <i class="search-icon-close fa fa-close"></i>
+            </a>
+          </li>
+          <li class="search-input">
+            <input id="search-tests" class="form-control" type="text" placeholder="Type to search...">
+          </li>
+        </ul>
+        <ul class="nav-right">
+          <li class="m-r-10">
+            <a href="#">
+              <span class="badge badge-primary">ExtentReports</span>
+            </a>
+          </li>
+            <li class="m-r-10">
+                <a href="#">
+                    <span class="badge badge-primary">Feb 17, 2025 02:36:46 PM</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div><div class="side-nav side-nav-folded">
+  <div class="side-nav-inner">
+    <ul class="side-nav-menu scrollable">
+      <li class="nav-item dropdown">
+        <a id="nav-test" class="dropdown-toggle" href="index.html">
+          <span class="icon-holder">
+            <i class="fa fa-align-left"></i>
+          </span>
+          <span class="title">Tests</span>
+        </a>
+      </li>
+            <li class="nav-item dropdown">
+        <a id="nav-tag" class="dropdown-toggle" href="tag.html">
+          <span class="icon-holder">
+            <i class="fa fa-tag"></i>
+          </span>
+          <span class="title">Tags</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a id="nav-ex" class="dropdown-toggle" href="exception.html">
+          <span class="icon-holder">
+            <i class="fa fa-bug"></i>
+          </span>
+          <span class="title">Exception</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a id="nav-dashboard" class="dropdown-toggle" href="dashboard.html">
+          <span class="icon-holder">
+            <i class="fa fa-bar-chart"></i>
+          </span>
+          <span class="title">Dashboard</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+            <div class="page-container">
+                <div class="main-content">
+                    <div class="test-wrapper row">
+                        <div class="test-list">
+                            <div class="test-list-tools">
+                                <ul class="tools pull-left">
+                                    <li>
+                                        <a href="">
+                                            <span class="font-size-14">Tests</span>
+                                        </a>
+                                    </li> 
+                                </ul>
+                                <ul class="tools text-right">
+                                    <li class="user-profile dropdown dropdown-animated scale-left">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <i class="fa fa-exclamation-circle"></i>
+                                        </a>
+                                        <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+                                            <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success pull-right"></span></a>
+	                                        <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>
+	                                        
+	                                        
+	                                        
+	                                        
+	                                        <div class="dropdown-divider"></div>
+                                            <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+                                        </ul>
+                                    </li>
+                                    <li class="user-profile dropdown dropdown-animated scale-left">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <i class="fa fa-tag"></i>
+                                        </a>
+                                        <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+                                                <a class="dropdown-item" href="#">Verify</a>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="test-list-wrapper scrollable">
+                                <ul class="test-list-item">
+                                    <li class="test-item"  status="pass" test-id="1"
+                                            author=""
+                                            tag="Verify"
+                                            device="">
+                                        <div class="status-avatar pass-bg">
+                                            <i class="fa fa-check text-white"></i>
+                                        </div>
+                                        <div class="open-test">
+                                            <div class="test-detail"> 
+                                                <p class="name">Verify the Login and Home page functionality with valid data</p> 
+                                                <p class="duration text-sm">0h 1m 6s+606ms</p> 
+                                                <span class="datetime">14:37:05 PM</span>
+                                            </div>
+                                        </div>
+                                        <div class="test-contents d-none">
+                                            <div class="detail-head">
+                                                <div class="p-v-10 d-inline-block"> 
+                                                    <div class="info">
+                                                        <h5 class="test-status text-pass">Verify the Login and Home page functionality with valid data</h5>
+                                                        <span class='badge badge-success'>02.17.2025 14:37:05</span>
+                                                        <span class='badge badge-danger'>02.17.2025 14:38:11</span>
+                                                        <span class='badge badge-default'>0h 1m 6s+606ms</span>
+                                                    </div>
+                                                    <div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Verify</span>
+                                                    </div>
+                                                    <div class="m-t-10 m-l-5">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+<div class="mt-4">
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">I connect virtual device with Desired Capabilities</div> 
+						<div class="status-avatar float-right pass-bg">
+						    <i class="fa fa-check text-white"></i>
+						</div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:37:06 PM</td>
+				<td>
+						{APP_ACTIVITY=com.csg.demo.MainActivity, APP_PACKAGE=com.csg.demo, App_activity_Name=.MainActivity, Application_Name=Demo, Automation_Name=Appium, COLUMN_11=, COLUMN_12=, COLUMN_13=, COLUMN_14=, COLUMN_15=, DeviceActivity=.NexusLauncherActivity, Device_Name=pixel_9, Path_of_Apk=/APK/Friction.apk, Platform_Name=Android, Platform_Version=15, TCID=RFS_01}
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>2:37:09 PM</td>
+				<td>
+						<b><font color=orange>Screenshot</b>
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='Run_February17_2025143646.0/02172025143709041.jpg' src='Run_February17_2025143646.0/02172025143709041.jpg' data-src='Run_February17_2025143646.0/02172025143709041.jpg'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:37:09 PM</td>
+				<td>
+						<b>Expected Device activity name : </b><font color=green>.NexusLauncherActivity</font>	<b>Actual Device activity name : </b><font color=green>.NexusLauncherActivity</font>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:37:09 PM</td>
+				<td>
+						Device .NexusLauncherActivity connected successfully
+				</td>
+			</tr>
+	</tbody>
+</table>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">I verify app install or not if not i Install app using testdata</div> 
+						<div class="status-avatar float-right pass-bg">
+						    <i class="fa fa-check text-white"></i>
+						</div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:37:09 PM</td>
+				<td>
+						{APP_ACTIVITY=com.csg.demo.MainActivity, APP_PACKAGE=com.csg.demo, App_activity_Name=.MainActivity, Application_Name=Demo, Automation_Name=Appium, COLUMN_11=, COLUMN_12=, COLUMN_13=, COLUMN_14=, COLUMN_15=, DeviceActivity=.NexusLauncherActivity, Device_Name=pixel_9, Path_of_Apk=/APK/Friction.apk, Platform_Name=Android, Platform_Version=15, TCID=RFS_01}
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>2:37:23 PM</td>
+				<td>
+						<b><font color=orange>Screenshot</b>
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='Run_February17_2025143646.0/02172025143723110.jpg' src='Run_February17_2025143646.0/02172025143723110.jpg' data-src='Run_February17_2025143646.0/02172025143723110.jpg'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:37:23 PM</td>
+				<td>
+						<b>Expected App status : </b><font color=green>'Demo' Application installed successfully</font>	<b>Actual App status : </b><font color=green>DemoApplication installed successfully</font>
+				</td>
+			</tr>
+	</tbody>
+</table>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">I luanch app using desired capabilities by testdata</div> 
+						<div class="status-avatar float-right pass-bg">
+						    <i class="fa fa-check text-white"></i>
+						</div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:37:23 PM</td>
+				<td>
+						{APP_ACTIVITY=com.csg.demo.MainActivity, APP_PACKAGE=com.csg.demo, App_activity_Name=.MainActivity, Application_Name=Demo, Automation_Name=Appium, COLUMN_11=, COLUMN_12=, COLUMN_13=, COLUMN_14=, COLUMN_15=, DeviceActivity=.NexusLauncherActivity, Device_Name=pixel_9, Path_of_Apk=/APK/Friction.apk, Platform_Name=Android, Platform_Version=15, TCID=RFS_01}
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>2:37:40 PM</td>
+				<td>
+						<b><font color=orange>Screenshot</b>
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='Run_February17_2025143646.0/02172025143740196.jpg' src='Run_February17_2025143646.0/02172025143740196.jpg' data-src='Run_February17_2025143646.0/02172025143740196.jpg'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:37:40 PM</td>
+				<td>
+						<b>Expected App activityStatus : </b><font color=green>'.MainActivity' Application lunched successfully</font>	<b>Actual App activityStatus : </b><font color=green>'.MainActivity' Application lunched successfully</font>
+				</td>
+			</tr>
+	</tbody>
+</table>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">I enter the valid email id and valid password</div> 
+						<div class="status-avatar float-right pass-bg">
+						    <i class="fa fa-check text-white"></i>
+						</div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:37:40 PM</td>
+				<td>
+						{Email=test@gmail.com, Password=test@1234, TCID=RFS_01}
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:37:46 PM</td>
+				<td>
+						<b>Expected Email : </b><font color=green>test@gmail.com</font>	<b>Actual Email : </b><font color=green>test@gmail.com</font>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:37:52 PM</td>
+				<td>
+						<b>Expected Password : </b><font color=green>test@1234</font>	<b>Actual Password : </b><font color=green>test@1234</font>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>2:37:53 PM</td>
+				<td>
+						<b><font color=orange>Screenshot</b>
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='Run_February17_2025143646.0/02172025143753823.jpg' src='Run_February17_2025143646.0/02172025143753823.jpg' data-src='Run_February17_2025143646.0/02172025143753823.jpg'>
+				</td>
+			</tr>
+	</tbody>
+</table>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">I verify that application successfully navigates to the home page</div> 
+						<div class="status-avatar float-right pass-bg">
+						    <i class="fa fa-check text-white"></i>
+						</div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:37:53 PM</td>
+				<td>
+						{AddHelper=Virat_Kohli, AddHelperEmail=Royal_Challengers_Bangalore@gmail.com, Comments=Testing Locomotive engine is NIL, Helper=John Smith, HotelName=Radisson Blu Plaza, HotelState=USA-states, Mileage=10L, RailRoadlist=BNSF, TCID=RFS_01, Truck ID=420}
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>2:37:57 PM</td>
+				<td>
+						<b><font color=orange>Screenshot</b>
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='Run_February17_2025143646.0/02172025143757776.jpg' src='Run_February17_2025143646.0/02172025143757776.jpg' data-src='Run_February17_2025143646.0/02172025143757776.jpg'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:37:58 PM</td>
+				<td>
+						<b>Expected Image view : </b><font color=green>true</font>	<b>Actual Image view : </b><font color=green>true</font>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:37:58 PM</td>
+				<td>
+						Verified that CSG Image view is displayed successfully
+				</td>
+			</tr>
+	</tbody>
+</table>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">I logout the application</div> 
+						<div class="status-avatar float-right pass-bg">
+						    <i class="fa fa-check text-white"></i>
+						</div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>2:38:04 PM</td>
+				<td>
+						<b><font color=orange>Screenshot</b>
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='Run_February17_2025143646.0/02172025143804379.jpg' src='Run_February17_2025143646.0/02172025143804379.jpg' data-src='Run_February17_2025143646.0/02172025143804379.jpg'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>2:38:04 PM</td>
+				<td>
+						<b><font color=orange>Screenshot</b>
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='Run_February17_2025143646.0/02172025143804841.jpg' src='Run_February17_2025143646.0/02172025143804841.jpg' data-src='Run_February17_2025143646.0/02172025143804841.jpg'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:38:04 PM</td>
+				<td>
+						<b>Expected Image view : </b><font color=green>true</font>	<b>Actual Image view : </b><font color=green>true</font>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:38:04 PM</td>
+				<td>
+						Verified that login page is displayed successfully
+				</td>
+			</tr>
+	</tbody>
+</table>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">I close the application</div> 
+						<div class="status-avatar float-right pass-bg">
+						    <i class="fa fa-check text-white"></i>
+						</div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:38:04 PM</td>
+				<td>
+						{APP_ACTIVITY=com.csg.demo.MainActivity, APP_PACKAGE=com.csg.demo, App_activity_Name=.MainActivity, Application_Name=Demo, Automation_Name=Appium, COLUMN_11=, COLUMN_12=, COLUMN_13=, COLUMN_14=, COLUMN_15=, DeviceActivity=.NexusLauncherActivity, Device_Name=pixel_9, Path_of_Apk=/APK/Friction.apk, Platform_Name=Android, Platform_Version=15, TCID=RFS_01}
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>2:38:11 PM</td>
+				<td>
+						<b><font color=orange>Screenshot</b>
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='Run_February17_2025143646.0/02172025143811678.jpg' src='Run_February17_2025143646.0/02172025143811678.jpg' data-src='Run_February17_2025143646.0/02172025143811678.jpg'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:38:11 PM</td>
+				<td>
+						<b>Expected App activity status : </b><font color=green>App closed successfully</font>	<b>Actual App activity status : </b><font color=green>App closed successfully</font>
+				</td>
+			</tr>
+	</tbody>
+</table>
+					</div>
+				</div>
+			</div>
+	</div>
+</div>
+                                        </div>
+                                    </li>
+                                    <li class="test-item"  status="fail" test-id="9"
+                                            author=""
+                                            tag="Verify"
+                                            device="">
+                                        <div class="status-avatar fail-bg">
+                                            <i class="fa fa-times text-white"></i>
+                                        </div>
+                                        <div class="open-test">
+                                            <div class="test-detail"> 
+                                                <p class="name">Verify Home page Daily logs details functionality</p> 
+                                                <p class="duration text-sm">0h 1m 48s+62ms</p> 
+                                                <span class="datetime">14:38:20 PM</span>
+                                            </div>
+                                        </div>
+                                        <div class="test-contents d-none">
+                                            <div class="detail-head">
+                                                <div class="p-v-10 d-inline-block"> 
+                                                    <div class="info">
+                                                        <h5 class="test-status text-fail">Verify Home page Daily logs details functionality</h5>
+                                                        <span class='badge badge-success'>02.17.2025 14:38:20</span>
+                                                        <span class='badge badge-danger'>02.17.2025 14:40:08</span>
+                                                        <span class='badge badge-default'>0h 1m 48s+62ms</span>
+                                                    </div>
+                                                    <div class="m-t-15">
+			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> Verify</span>
+                                                    </div>
+                                                    <div class="m-t-10 m-l-5">
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+<div class="mt-4">
+	<div class="accordion">
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">I connect virtual device with Desired Capabilities</div> 
+						<div class="status-avatar float-right pass-bg">
+						    <i class="fa fa-check text-white"></i>
+						</div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:38:20 PM</td>
+				<td>
+						{APP_ACTIVITY=com.csg.demo.MainActivity, APP_PACKAGE=com.csg.demo, App_activity_Name=.MainActivity, Application_Name=Demo, Automation_Name=Appium, COLUMN_11=, COLUMN_12=, COLUMN_13=, COLUMN_14=, COLUMN_15=, DeviceActivity=.NexusLauncherActivity, Device_Name=pixel_9, Path_of_Apk=/APK/Friction.apk, Platform_Name=Android, Platform_Version=15, TCID=RFS_01}
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>2:38:22 PM</td>
+				<td>
+						<b><font color=orange>Screenshot</b>
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='Run_February17_2025143646.0/02172025143822113.jpg' src='Run_February17_2025143646.0/02172025143822113.jpg' data-src='Run_February17_2025143646.0/02172025143822113.jpg'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:38:22 PM</td>
+				<td>
+						<b>Expected Device activity name : </b><font color=green>.NexusLauncherActivity</font>	<b>Actual Device activity name : </b><font color=green>.NexusLauncherActivity</font>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:38:22 PM</td>
+				<td>
+						Device .NexusLauncherActivity connected successfully
+				</td>
+			</tr>
+	</tbody>
+</table>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">I verify app install or not if not i Install app using testdata</div> 
+						<div class="status-avatar float-right pass-bg">
+						    <i class="fa fa-check text-white"></i>
+						</div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:38:22 PM</td>
+				<td>
+						{APP_ACTIVITY=com.csg.demo.MainActivity, APP_PACKAGE=com.csg.demo, App_activity_Name=.MainActivity, Application_Name=Demo, Automation_Name=Appium, COLUMN_11=, COLUMN_12=, COLUMN_13=, COLUMN_14=, COLUMN_15=, DeviceActivity=.NexusLauncherActivity, Device_Name=pixel_9, Path_of_Apk=/APK/Friction.apk, Platform_Name=Android, Platform_Version=15, TCID=RFS_01}
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>2:38:23 PM</td>
+				<td>
+						<b><font color=orange>Screenshot</b>
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='Run_February17_2025143646.0/02172025143823970.jpg' src='Run_February17_2025143646.0/02172025143823970.jpg' data-src='Run_February17_2025143646.0/02172025143823970.jpg'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:38:24 PM</td>
+				<td>
+						<b>Expected App status : </b><font color=green>'Demo' Application installed successfully</font>	<b>Actual App status : </b><font color=green>DemoApplication installed successfully</font>
+				</td>
+			</tr>
+	</tbody>
+</table>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">I luanch app using desired capabilities by testdata</div> 
+						<div class="status-avatar float-right pass-bg">
+						    <i class="fa fa-check text-white"></i>
+						</div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:38:24 PM</td>
+				<td>
+						{APP_ACTIVITY=com.csg.demo.MainActivity, APP_PACKAGE=com.csg.demo, App_activity_Name=.MainActivity, Application_Name=Demo, Automation_Name=Appium, COLUMN_11=, COLUMN_12=, COLUMN_13=, COLUMN_14=, COLUMN_15=, DeviceActivity=.NexusLauncherActivity, Device_Name=pixel_9, Path_of_Apk=/APK/Friction.apk, Platform_Name=Android, Platform_Version=15, TCID=RFS_01}
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>2:38:40 PM</td>
+				<td>
+						<b><font color=orange>Screenshot</b>
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='Run_February17_2025143646.0/02172025143840208.jpg' src='Run_February17_2025143646.0/02172025143840208.jpg' data-src='Run_February17_2025143646.0/02172025143840208.jpg'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:38:40 PM</td>
+				<td>
+						<b>Expected App activityStatus : </b><font color=green>'.MainActivity' Application lunched successfully</font>	<b>Actual App activityStatus : </b><font color=green>'.MainActivity' Application lunched successfully</font>
+				</td>
+			</tr>
+	</tbody>
+</table>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">I enter the valid email id and valid password</div> 
+						<div class="status-avatar float-right pass-bg">
+						    <i class="fa fa-check text-white"></i>
+						</div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:38:40 PM</td>
+				<td>
+						{Email=test@gmail.com, Password=test@1234, TCID=RFS_01}
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:38:45 PM</td>
+				<td>
+						<b>Expected Email : </b><font color=green>test@gmail.com</font>	<b>Actual Email : </b><font color=green>test@gmail.com</font>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:38:52 PM</td>
+				<td>
+						<b>Expected Password : </b><font color=green>test@1234</font>	<b>Actual Password : </b><font color=green>test@1234</font>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>2:38:52 PM</td>
+				<td>
+						<b><font color=orange>Screenshot</b>
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='Run_February17_2025143646.0/02172025143852917.jpg' src='Run_February17_2025143646.0/02172025143852917.jpg' data-src='Run_February17_2025143646.0/02172025143852917.jpg'>
+				</td>
+			</tr>
+	</tbody>
+</table>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">I verify that application successfully navigates to the home page</div> 
+						<div class="status-avatar float-right pass-bg">
+						    <i class="fa fa-check text-white"></i>
+						</div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:38:52 PM</td>
+				<td>
+						{AddHelper=Virat_Kohli, AddHelperEmail=Royal_Challengers_Bangalore@gmail.com, Comments=Testing Locomotive engine is NIL, Helper=John Smith, HotelName=Radisson Blu Plaza, HotelState=USA-states, Mileage=10L, RailRoadlist=BNSF, TCID=RFS_01, Truck ID=420}
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>2:38:58 PM</td>
+				<td>
+						<b><font color=orange>Screenshot</b>
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='Run_February17_2025143646.0/02172025143858593.jpg' src='Run_February17_2025143646.0/02172025143858593.jpg' data-src='Run_February17_2025143646.0/02172025143858593.jpg'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:38:58 PM</td>
+				<td>
+						<b>Expected Image view : </b><font color=green>true</font>	<b>Actual Image view : </b><font color=green>true</font>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:38:58 PM</td>
+				<td>
+						Verified that CSG Image view is displayed successfully
+				</td>
+			</tr>
+	</tbody>
+</table>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">I entered daily logs details using testdata</div> 
+						<div class="status-avatar float-right pass-bg">
+						    <i class="fa fa-check text-white"></i>
+						</div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:38:58 PM</td>
+				<td>
+						{AddHelper=Virat_Kohli, AddHelperEmail=Royal_Challengers_Bangalore@gmail.com, Comments=Testing Locomotive engine is NIL, Helper=John Smith, HotelName=Radisson Blu Plaza, HotelState=USA-states, Mileage=10L, RailRoadlist=BNSF, TCID=RFS_01, Truck ID=420}
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:39:03 PM</td>
+				<td>
+						<b>Expected Truck ID : </b><font color=green>420</font>	<b>Actual Truck ID : </b><font color=green>420</font>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:39:07 PM</td>
+				<td>
+						<b>Expected Mileage : </b><font color=green>10L</font>	<b>Actual Mileage : </b><font color=green>10L</font>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:39:15 PM</td>
+				<td>
+						<b>Expected HotelName : </b><font color=green>Radisson Blu Plaza</font>	<b>Actual HotelName : </b><font color=green>Radisson Blu Plaza</font>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>2:39:16 PM</td>
+				<td>
+						<b><font color=orange>Screenshot</b>
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='Run_February17_2025143646.0/02172025143916124.jpg' src='Run_February17_2025143646.0/02172025143916124.jpg' data-src='Run_February17_2025143646.0/02172025143916124.jpg'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:39:24 PM</td>
+				<td>
+						<b>Expected Helper Name : </b><font color=green>Virat_Kohli</font>	<b>Actual Helper Name : </b><font color=green>Virat_Kohli</font>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:39:29 PM</td>
+				<td>
+						<b>Expected Helper Email : </b><font color=green>Royal_Challengers_Bangalore@gmail.com</font>	<b>Actual Helper Email : </b><font color=green>Royal_Challengers_Bangalore@gmail.com</font>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>2:39:29 PM</td>
+				<td>
+						<b><font color=orange>Screenshot</b>
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='Run_February17_2025143646.0/02172025143929810.jpg' src='Run_February17_2025143646.0/02172025143929810.jpg' data-src='Run_February17_2025143646.0/02172025143929810.jpg'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>2:39:38 PM</td>
+				<td>
+						<b><font color=orange>Screenshot</b>
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='Run_February17_2025143646.0/02172025143938829.jpg' src='Run_February17_2025143646.0/02172025143938829.jpg' data-src='Run_February17_2025143646.0/02172025143938829.jpg'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>2:39:40 PM</td>
+				<td>
+						<b><font color=orange>Screenshot</b>
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='Run_February17_2025143646.0/02172025143940481.jpg' src='Run_February17_2025143646.0/02172025143940481.jpg' data-src='Run_February17_2025143646.0/02172025143940481.jpg'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:39:40 PM</td>
+				<td>
+						Verified & Entered all the Daily logs details & proceed for activities
+				</td>
+			</tr>
+	</tbody>
+</table>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">I logout the application</div> 
+						<div class="status-avatar float-right fail-bg">
+						    <i class="fa fa-times text-white"></i>
+						</div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>2:40:00 PM</td>
+				<td>
+						<span class='badge white-text red'>Test Case is Failed : </span>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>2:40:01 PM</td>
+				<td>
+						<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //android.widget.Button[@content-desc='Open navigation menu']' (tried for 20 second(s) with 500 milliseconds interval)
+	at Railway_App.testComponents.BaseTest.testStepHandle(BaseTest.java:230)
+	at RailwayFieldService_App_general_store.stepDefinitions.LoginStepDefs.iLogoutTheApplication(LoginStepDefs.java:279)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:62)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:135)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [0d074fd7-685f-4ad4-8033-7cc30cb48f34, findElement {using=xpath, value=//android.widget.Button[@content-desc='Open navigation menu']}]
+Capabilities {appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {automationName: UiAutomator2, deviceName: Pixel_9, platformName: ANDROID, platformVersion: 15.0}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x2424, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 15, appium:statBarHeight: 137, appium:takesScreenshot: true, appium:viewportRect: {height: 2287, left: 0, top: 137, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 0d074fd7-685f-4ad4-8033-7cc30cb48f34
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:243)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at Railway_App.componentGroups.ReusableLibrary.waitForElementToBeClickableThenClick(ReusableLibrary.java:47)
+	at Railway_App.pageObjects.LogInPage.clickOnLogoutOption(LogInPage.java:280)
+	at RailwayFieldService_App_general_store.stepDefinitions.LoginStepDefs.iLogoutTheApplication(LoginStepDefs.java:264)
+	... 45 more
+</textarea>
+				</td>
+			</tr>
+	</tbody>
+</table>
+							<img class='r-img' onerror='this.style.display="none"' data-featherlight='Run_February17_2025143646.0/02172025144001484.jpg' src='Run_February17_2025143646.0/02172025144001484.jpg' data-src='Run_February17_2025143646.0/02172025144001484.jpg'>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-header" role="tab">
+					<h5 class="card-title">
+						<div class="node">I close the application</div> 
+						<div class="status-avatar float-right pass-bg">
+						    <i class="fa fa-check text-white"></i>
+						</div>
+					</h5>
+				</div>
+				<div class="collapse">
+					<div class="card-body">
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:40:01 PM</td>
+				<td>
+						{APP_ACTIVITY=com.csg.demo.MainActivity, APP_PACKAGE=com.csg.demo, App_activity_Name=.MainActivity, Application_Name=Demo, Automation_Name=Appium, COLUMN_11=, COLUMN_12=, COLUMN_13=, COLUMN_14=, COLUMN_15=, DeviceActivity=.NexusLauncherActivity, Device_Name=pixel_9, Path_of_Apk=/APK/Friction.apk, Platform_Name=Android, Platform_Version=15, TCID=RFS_01}
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-info text-info"></i></td>
+				<td>2:40:08 PM</td>
+				<td>
+						<b><font color=orange>Screenshot</b>
+						<img class='r-img' onerror='this.style.display="none"' data-featherlight='Run_February17_2025143646.0/02172025144008854.jpg' src='Run_February17_2025143646.0/02172025144008854.jpg' data-src='Run_February17_2025143646.0/02172025144008854.jpg'>
+				</td>
+			</tr>
+			<tr class="event-row">
+				<td><i class="fa fa-check text-pass"></i></td>
+				<td>2:40:08 PM</td>
+				<td>
+						<b>Expected App activity status : </b><font color=green>App closed successfully</font>	<b>Actual App activity status : </b><font color=green>App closed successfully</font>
+				</td>
+			</tr>
+	</tbody>
+</table>
+					</div>
+				</div>
+			</div>
+	</div>
+</div>
+                                        </div>
+                                    </li>
+                                </ul>    
+                            </div>
+                        </div>
+                        <div class="test-content scrollable">
+                            <div class="test-content-tools">
+                                <ul>
+                                    <li>
+                                        <a class="back-to-test" href="javascript:void(0)">
+                                            <i class="fa fa-arrow-left"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="test-content-detail">
+                                <div class="detail-body"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/24cb10e/spark/js/script.js"></script>
+</body>
+</html>
